@@ -1,0 +1,54 @@
+h2 {
+    font-family: 'Grandstander', cursive;
+    font-size: 3em;
+    text-align: center
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    width: 5em;
+    height: 2em;
+    border: none;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#grid-slider {
+    
+}
+
+.content {
+    display: flex;
+    margin: 3% 10% 3% 10%;
+    flex-direction: column;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: gray;
+    border-style: solid;
+    margin: 0 15% 0 15%;
+    height: 50%;
+    width: auto;
+
+}
