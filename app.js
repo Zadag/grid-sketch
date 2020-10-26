@@ -2,7 +2,7 @@ const gridContainer = document.querySelector("#grid-container");
 const square = document.createElement("div");
 const slider = document.querySelector("#grid-slider");
 const displaySlider = document.querySelector("#sliderValue")
-
+gridContainer.appendChild(square);
 const gridSquare = square.classList.add("squareClass");
 square.style.backgroundColor = "red";
 
@@ -24,7 +24,15 @@ slider.onchange = function() {
     for (let i=0; i < Math.pow(slider.value, 2); i++) {
         gridContainer.appendChild(square.cloneNode(true));
     }
+    const allSquares = document.querySelectorAll(".squareClass");
+    allSquares.forEach((squareClass) =>{
+        squareClass.addEventListener("mouseover", () => {
+            console.log("test");
+        });
+    });
 }
+
+
 
 
 
